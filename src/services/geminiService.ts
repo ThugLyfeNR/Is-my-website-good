@@ -1,5 +1,7 @@
+
+
 import { GoogleGenAI } from "@google/genai";
-import type { AuditData, AuditReport, GroundingSource } from '../types.ts';
+import type { AuditData, AuditReport, GroundingSource } from '../types';
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 

@@ -1,7 +1,8 @@
 
 
+
 import React, { useState } from 'react';
-import type { AuditData, AuditSection, GroundingSource, ImprovementPoint } from '../types.ts';
+import type { AuditData, AuditSection, GroundingSource, ImprovementPoint } from '../types';
 import { generateVisualExample, getWebsiteStyleDescription } from '../services/geminiService';
 import ImageModal from './ImageModal';
 import { LinkIcon } from './icons/LinkIcon';
