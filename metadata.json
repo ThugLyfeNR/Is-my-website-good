@@ -1,6 +1,0 @@
-{
-  "name": "UX/UI Website Auditor",
-  "description": "An AI-powered tool that performs a thorough UX/UI audit of any given website URL, providing detailed analysis and recommendations.",
-  "requestFramePermissions": [],
-  "prompt": ""
-}
