@@ -3,7 +3,7 @@
 import { GoogleGenAI } from "@google/genai";
 import type { AuditData, AuditReport, GroundingSource } from '../types';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.GEMINI_API_KEY });
 
 const generatePrompt = (url: string) => `
 Analyze the website at the URL: ${url}
