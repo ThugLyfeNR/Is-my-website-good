@@ -1,0 +1,88 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+/* For custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0F1A;
+}
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(rgba(200, 200, 200, 0.07) 1px, transparent 1px), linear-gradient(to right, rgba(200, 200, 200, 0.07) 1px, transparent 1px);
+  background-size: 2rem 2rem;
+}
+
+@keyframes aurora {
+  from { transform: rotate(0deg) scale(1.5); }
+  to { transform: rotate(360deg) scale(1.5); }
+}
+.animate-aurora {
+  animation: aurora 60s linear infinite;
+}
+.animation-delay-30s {
+  animation-delay: -30s;
+}
+.bg-aurora-1 {
+  background-image: radial-gradient(ellipse at 25% 25%, #00bcd4 0%, rgba(255,255,255,0) 50%);
+}
+.bg-aurora-2 {
+  background-image: radial-gradient(ellipse at 75% 75%, #3f51b5 0%, rgba(255,255,255,0) 50%);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+  animation-delay: var(--animation-delay, 0s);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-zoomIn {
+    animation: zoomIn 0.3s ease-out forwards;
+}
+
+@keyframes pulseDots {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+.dot-pulse {
+  animation: pulseDots 1.4s infinite ease-in-out;
+}
+
+@keyframes morph {
+  0% { d: path('M20 20 H 80 V 80 H 20 Z'); } /* Cube */
+  25% { d: path('M50 10 L 90 35 L 75 90 L 25 90 L 10 35 Z'); } /* Pentagon */
+  50% { d: path('M50 10 L 65 35 L 90 35 L 75 65 L 80 90 L 50 75 L 20 90 L 25 65 L 10 35 L 35 35 Z'); } /* Star */
+  75% { d: path('M30 10 H 70 L 90 30 V 70 L 70 90 H 30 L 10 70 V 30 Z'); } /* Octagon */
+  100% { d: path('M20 20 H 80 V 80 H 20 Z'); } /* Cube */
+}
+.animate-morph {
+  animation: morph 8s ease-in-out infinite;
+}

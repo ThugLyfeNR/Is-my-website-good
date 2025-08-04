@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI UX/UI Auditor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.12.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#0A0F1A] text-gray-200 font-sans antialiased">
+    <div class="fixed top-0 left-0 w-full h-full bg-grid-pattern opacity-[0.4] z-0"></div>
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[150%] h-[800px] -z-10 opacity-20">
+      <div class="absolute w-full h-full top-0 left-0 bg-aurora-1 animate-aurora"></div>
+      <div class="absolute w-full h-full top-0 left-0 bg-aurora-2 animate-aurora animation-delay-30s"></div>
+    </div>
+    <div id="root" class="relative z-10"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
